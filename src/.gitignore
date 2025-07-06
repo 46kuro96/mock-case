@@ -13,3 +13,13 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+
+
+
+# 以下を追加
+/storage/logs/
+/storage/framework/
+
+# 画像ファイルは管理対象に含める
+!/storage/app/public/
+!/storage/app/public/**
