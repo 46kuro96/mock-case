@@ -1,0 +1,84 @@
+.container {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.tab-menu {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tab-menu a {
+    text-decoration: none;
+    margin-left: 150px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.tab-menu a.active {
+    color: red;
+    font-weight: bold;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.item-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.item-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.item-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sold-badge {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .container {
+        width: 100%;;
+    }
+
+    .item-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .container {
+        width: 100%;
+    }
+
+    .item-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+    }
+}

@@ -13,7 +13,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // サービスをDIコンテナに登録
+        $this->app->singleton(StripePaymentService::class, function ($app) {
+            return new StripePaymentService();
+        });
+
     }
 
     /**
